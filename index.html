@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda en Línea</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Tienda de Arepas Saludables</h1>
+    <div class="cart">
+      <span id="cart-count">0</span> Items - <span id="total-price">$0.00</span>
+    </div>
+  </header>
+  
+  <main>
+    <section id="product-list">//linea 33
+      <div class="product" data-name="Arepa de Chía" data-price="3.00">
+        <h2>Arepa de Chía</h2>
+        <p>$3.00</p>
+        <button onclick="addToCart('Arepa de Chía', 3.00)">Añadir al Carrito</button>
+      </div>
+      <div class="product" data-name="Arepa de Zanahoria" data-price="3.50">
+        <h2>Arepa de Zanahoria</h2>//linea 47
+        <p>$3.50</p>
+        <button onclick="addToCart('Arepa de Zanahoria', 3.50)">Añadir al Carrito</button>
+      </div>
+      <div class="product" data-name="Arepa de Queso" data-price="4.00">
+        <h2>Arepa de Queso</h2>
+        <p>$4.00</p>
+        <button onclick="addToCart('Arepa de Queso', 4.00)">Añadir al Carrito</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
